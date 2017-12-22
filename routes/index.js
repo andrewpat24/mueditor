@@ -3,10 +3,19 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.send({
-   id: 1, 
-   username: "andrew"
-  });
+  let dummyUserObject = [
+  {
+    id: 1, 
+    username: "andrew"
+   }, 
+   {
+     id: 2,
+     username: "steve"
+   }
+  ];
+  console.log(dummyUserObject);
+
+  res.json(dummyUserObject);
 });
 
 module.exports = router;
