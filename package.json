@@ -3,10 +3,14 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "server": "PORT=3001 nodemon npm start",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "dependencies": {
     "body-parser": "~1.17.1",
+    "concurrently": "^3.5.1",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.3",
     "dotenv": "^4.0.0",
@@ -14,6 +18,7 @@
     "jade": "~1.11.0",
     "morgan": "~1.8.1",
     "nodemon": "^1.14.1",
+    "semantic-ui-css": "^2.2.12",
     "serve-favicon": "~2.4.2"
   }
 }

@@ -15,20 +15,17 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          User information will be printed below
-        </p>
-        <ul>
+        <h2>
+          This is a test statement. 
+        </h2>
+        <div>
           {
-            this.state.users.map (user =>
-              <li key={user.id}>{user.username}</li> 
+            this.state.users.map(user => 
+             <p key={user.id}>{user.username}</p>
             )
           }
-          </ul> 
+          </div>
+        <a href="/options">This is a test anchor</a>
       </div>
     );
   }

@@ -13,4 +13,16 @@ router.get('/', function(req, res, next) {
    }]);
 });
 
+router.get('/index', function(req, res, next) {
+  console.log("HELLO! WORLD>!?S"); 
+  res.json([{
+    id: 1, 
+    username: "andrew"
+   }, 
+   {
+     id: 2,
+     username: "steve"
+   }]);
+});
+
 module.exports = router;

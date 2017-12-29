@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
+router.get('/index', function(req, res, next) {
   res.json([{
     id: 1, 
     username: "andrew"
@@ -11,6 +11,18 @@ router.get('/', function(req, res, next) {
      id: 2,
      username: "steve"
    }]);
+});
+
+router.get('/options', function(req, res, next) {
+  res.render('index');
+});
+
+router.get('/send', function(req, res, next) {
+
+});
+
+router.get('/options', function(req, res, next) {
+
 });
 
 module.exports = router;
