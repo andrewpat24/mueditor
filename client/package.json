@@ -15,10 +15,10 @@
     "eject": "react-scripts eject"
   },
   "proxy": {
-    "/users" : {
+    "/users": {
       "target": "http://localhost:3001"
     },
-    "/options" : {
+    "/options": {
       "target": "http://localhost:3001"
     }
   }

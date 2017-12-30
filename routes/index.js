@@ -14,7 +14,9 @@ router.get('/index', function(req, res, next) {
 });
 
 router.get('/options', function(req, res, next) {
-  res.render('index');
+  res.render('index', {
+    title: 'options'
+  });
 });
 
 router.get('/send', function(req, res, next) {
