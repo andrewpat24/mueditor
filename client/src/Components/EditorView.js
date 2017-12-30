@@ -13,7 +13,7 @@ class EditorView extends Component {
       <section id="editor-view">
         <div className="editor-container">
               <div className="editor">
-                  <textArea onKeyPress></textArea>
+                  <textArea></textArea>
               </div>
         </div>
        </section>
