@@ -1,6 +1,10 @@
 textArea {
     resize: none;
+
     height: 100vh; 
     border: none;
     padding:1%; 
+
+    font-size: 1.1em; 
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }

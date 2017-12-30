@@ -10,11 +10,13 @@ class EditorView extends Component {
     }
 
     return (
-       <div className="editor-container">
-            <div className="editor">
-                <textArea onKeyPress></textArea>
-            </div>
-       </div>
+      <section id="editor-view">
+        <div className="editor-container">
+              <div className="editor">
+                  <textArea onKeyPress></textArea>
+              </div>
+        </div>
+       </section>
     );
   }
 }
